@@ -19,17 +19,12 @@ const CartContainer = ({ cart = [], total, dispatch }) => {
   }
   return (
     <>
-    <img style={{ 
-      minHeight: '100%',
-    minWidth: '1024px',
-    height: 'auto',
-    position: 'fixed',
-    zIndex: '-1',
-    top: '0',
-    left: '0',
-    width: '100',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'}} src='https://i.imgur.com/mDFNcTm.jpg'  alt="beackground" />
+    <img  responsive style={{ 
+      position: 'fixed',
+      zIndex: '-1',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'}}
+      src='https://i.imgur.com/mDFNcTm.jpg'  alt="beackground" />
     <section className="cart">
       {/* cart header */}
       <header>
