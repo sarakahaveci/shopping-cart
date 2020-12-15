@@ -1,6 +1,7 @@
 import {DECREASE, INCREASE, CLEAR_CART, REMOVE, GET_TOTALS, TOGGLE_AMOUNT } from "./actions";
 import cartItems from "./cart-item";
 
+
 const initialStore = {
   cart: cartItems,
   total: 0,
@@ -38,8 +39,8 @@ function reducer(state = initialStore, action) {
   if (action.type === GET_TOTALS) {
     let { total, amount } = state.cart.reduce(
       (cartTotal, cartItem) => {
-        const { price, amount } = cartItem;
-        const itemTotal = price * amount;
+        const { price, amount, shipping } = cartItem;
+        const itemTotal = (price+ shipping) * amount;
 
         cartTotal.total += itemTotal;
         cartTotal.amount += amount;
