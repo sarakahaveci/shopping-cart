@@ -19,6 +19,8 @@ const CartContainer = ({ cart = [], total, dispatch }) => {
   return (
     <>
     <img  responsive style={{ 
+      height:'100%',
+      width:'100',
       position: 'fixed',
       zIndex: '-1',
       backgroundRepeat: 'no-repeat',
