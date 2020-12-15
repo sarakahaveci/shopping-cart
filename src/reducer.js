@@ -1,7 +1,5 @@
 import {DECREASE, INCREASE, CLEAR_CART, REMOVE, GET_TOTALS, TOGGLE_AMOUNT } from "./actions";
 import cartItems from "./cart-item";
-
-
 const initialStore = {
   cart: cartItems,
   total: 0,
