@@ -176,7 +176,7 @@ Cart
   min-height: calc(100vh - 80px);
   width: 90vw;
   margin: 0 auto;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   max-width: var(--fixed-width);
 }
 .cart h2 {
@@ -185,6 +185,7 @@ Cart
   margin-bottom: 1.25rem;
 }
 .empty-cart {
+  margin: 4 auto  ;
   text-transform: lowercase;
   color: var(--clr-grey-5);
   margin-top: 1rem;
