@@ -227,6 +227,7 @@ Cart Item
   margin: 1.5rem 0;
 }
 .cart-item img {
+  
   width: 6rem;
   height: 8rem;
   object-fit: cover;
@@ -237,6 +238,7 @@ Cart Item
   letter-spacing: 2px;
 }
 .item-price {
+  margin-left: auto;
   color: var(--clr-grey-5);
 }
 .remove-btn {

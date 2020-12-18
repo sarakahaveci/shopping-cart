@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import CartContainer from "./components/CartContainer";
 import { createStore } from "redux";
@@ -10,7 +10,21 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-function App() {
+export default class App extends Component {
+  constructor(){
+    super();
+    this.state= {
+      books:[],
+      error: null
+    }
+  }
+  buidlBooks= (data)=>{
+
+  }
+  componentDidMount(){
+let url = "https://my-json-server.typicode.com/erhnml/MyJSONServer/books";
+  } 
+  render(){ 
   return (
     <>
     <Provider store={store}>
@@ -21,5 +35,4 @@ function App() {
     </>
   );
 }
-
-export default App;
+}
